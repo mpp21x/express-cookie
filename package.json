@@ -1,0 +1,35 @@
+{
+  "name": "express-cookie",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write *.js && prettier --write \"bin/**/*.js\" \"routes/**/*.js\"",
+    "lint": "eslint --fix \"{bin,routes}/**/*.js\"",
+    "start": "nodemon ./bin/www",
+    "depcheck": "depcheck --ignores=debug,hbs"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.6.5",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "depcheck": "^1.4.7",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^3.0.2",
+    "prettier": "3.1.1"
+  }
+}
